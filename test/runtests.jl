@@ -5,7 +5,7 @@ using Compat
 failed_tests = 0
 for test in [
     "basic/hello", "basic/hello-nocr", "basic/long",
-    "basic/color", "basic/boserase"
+    #="basic/color",=# "basic/boserase"
 ]
     em = ScreenEmulator(80,24)
     basepath = joinpath(dirname(@__FILE__),test)
